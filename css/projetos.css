@@ -1,0 +1,61 @@
+#apresentacao__conteudo__projetos {
+    display: flex;
+    width: 90%;
+    margin: 2rem 0rem;
+    align-items: center;
+    height: 10rem;
+    
+    & .galeria{
+        width: 800px;
+        display: flex;
+        overflow-x: scroll;
+        overflow: hidden;
+
+        & div{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 1rem;
+            padding: 0.5rem;
+            flex: none;
+
+        }
+
+        & img{
+            width: 100%;
+            filter: grayscale(100%);
+            transition: transform 0.5s;
+            opacity: 0.8;
+
+            &:hover{
+                filter: grayscale(0);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+
+    }
+
+    & #btn-anterior{
+        transform: scaleX(-1);
+        width: 3rem;
+        cursor: pointer;
+        margin: 0 2rem 0 0;
+
+        &:hover{
+            transition-duration: 500ms;
+            width: 3.5rem;
+        }
+    }
+
+    & #btn-proximo{
+        width: 3rem;
+        cursor: pointer;
+        margin: 0 2rem 0 0x;
+
+        &:hover{
+            transition-duration: 500ms;
+            width: 3.5rem;
+        }
+    }
+}

@@ -1,0 +1,59 @@
+:root {
+    --cor-primaria: #404040;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #D41C1C;
+    --cor-hover: #910000;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+#apresentacao__conteudo{
+
+    & .devicon-html5-plain{
+        font-size: 3rem;
+        color: var(--cor-terciaria);
+
+    }
+    
+}
+
+.apresentacao__conteudo__curso{
+    font-size: 1.5rem;
+    color: var(--cor-secundaria);
+    text-decoration: none;
+}
+/* .apresentacao__conteudo__formacoes__programas__linguagem{
+    position: relative;
+    display: inline-block;
+    font-size: 7rem;
+    gap: 3rem;
+
+    & .apresentacao__conteudo__formacoes__programas__linguagem__curso{
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+        z-index: 1;
+        font-size: 2rem;
+        overflow-y: scroll;
+
+    }
+
+    &:hover{
+
+        font-size: 8rem;
+        color: var(--cor-hover);
+        transition-duration: 300ms;
+
+        & .apresentacao__conteudo__formacoes__programas__linguagem__curso{
+        display: block;
+        }
+    } */
+
+/* } */
+
+.apresentacao__conteudo__formacoes__programas__linguagem__lista{
+    gap: 1rem;
+}
