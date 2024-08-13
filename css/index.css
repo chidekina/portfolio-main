@@ -44,10 +44,32 @@
             font-weight: 700;
         }
     }
+
+    & h4{
+        margin-top: 2rem;
+        font-size: 1.5rem;
+        color: var(--cor-hover);
+
+        & a{
+            text-decoration:none;
+            color: var(--cor-terciaria);
+
+            &:hover{
+                text-decoration: underline;
+                transition-duration: 400ms;
+                color: var(--cor-hover);
+            }
+        }
+    }
 }
 
+.icones{
+    display: flex;
+    justify-content: center;
+}
 #saiba_mais{ 
     display: flex;
+    text-align: center;
 
     & img{
         width: 24%;
