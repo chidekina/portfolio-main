@@ -26,11 +26,13 @@ body {
     background: linear-gradient(133deg, rgba(2, 0, 36, 1) 0%, rgba(115, 0, 0, 1) 52%, rgba(2, 0, 36, 1) 100%);
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
+    overflow: auto;
+    box-sizing: border-box;
 }
 
 #cabecalho {
-    margin: 1% 5% 0% 5%;
+    margin: 2% 5% 0% 5%;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -103,7 +105,7 @@ body {
         text-align: center;
         flex-direction: column;
         gap: 1.5rem;
-        height: 10rem;
+        height: 8rem;
 
 
         & #apresentacao__conteudo__menu {
@@ -149,7 +151,7 @@ body {
     }
 
     & #apresentacao__conteudo__descricao {
-        width: 70%;
+        width: 100%;
         color: var(--cor-secundaria);
         font-family: var(--fonte-secundaria);
         font-size: 1.2rem;
@@ -164,7 +166,7 @@ body {
             color: var(--cor-terciaria);
             font-family: var(--fonte-secundaria);
             font-size: 1.5rem;
-            margin-top: 1rem;
+            margin: 0.5em 0;
         }
     }
 
@@ -173,6 +175,7 @@ body {
         flex-direction: column;
         text-align: center;
         gap: 1rem;
+        margin-bottom: 10rem;
 
         & #apresentacao__conteudo__links__subtitulo {
             font-family: var(--fonte-primaria);
@@ -192,6 +195,7 @@ body {
             width: 80%;
             border: 2px solid var(--cor-terciaria);
             font-size: 1rem;
+            
 
 
             border-radius: 1rem;
@@ -212,13 +216,14 @@ body {
             }
 
             &:hover {
+                transform: scale(1.12);
                 background-color: var(--cor-hover);
-                font-size: 1.5rem;
-                transition-duration: 200ms;
+                /* font-size: 1.5rem; */
+                transition-duration: 400ms;
 
 
                 .apresentacao__conteudo__links__redes__icone {
-                    width: 2.5rem;
+                    /* width: 2.5rem; */
                     transition-duration: 150ms;
                 }
             }
