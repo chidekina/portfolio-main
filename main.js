@@ -1,19 +1,19 @@
-let scrollContainer = document.querySelector('.galeria');
-let btnTras = document.getElementById("btn-anterior");
-let btnFrente = document.getElementById("btn-proximo");
+function mostrarConteudo_descricao(){
+    let conteudo = document.getElementById("apresentacao__conteudo__descricao");
+    let projetos = document.getElementById("apresentacao__conteudo__projetos");
+   
+    conteudo.style.opacity = "1";
+    conteudo.style.height = "40vh";
+    projetos.style.opacity = "0";
+    projetos.style.height = "0";
+}
 
-scrollContainer.addEventListener('wheel', (e) => {
-    e.defaultPrevented;
-    scrollContainer.scrollLeft += e.deltaY;
-    scrollContainer.style.scrollBehavior = 'auto';
-});
-
-btnFrente.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = 'smooth';
-    scrollContainer.scrollLeft += 800;
-})
-
-btnTras.addEventListener("click", () => {
-    scrollContainer.style.scrollBehavior = 'smooth';
-    scrollContainer.scrollLeft -= 800;
-})
+function mostrarConteudo_projeto(){
+    let conteudo = document.getElementById("apresentacao__conteudo__descricao");
+    let projetos = document.getElementById("apresentacao__conteudo__projetos");
+   
+    projetos.style.opacity = "1";
+    projetos.style.height = "40vh";
+    conteudo.style.opacity = "0";
+    conteudo.style.height = "0";
+}

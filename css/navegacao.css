@@ -1,0 +1,106 @@
+#aba__saiba-mais{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 47px;
+    padding: 0.2em 0.5em;
+
+    &:hover{
+        transform: scale(1.2);
+        transition-duration: 300ms;
+        background-color: var(--cor-hover);
+        color: var(--cor-secundaria);
+    }
+
+    &:focus{
+        transform: scale(1.2);
+        transition-duration: 300ms;
+        background-color: var(--cor-hover);
+        color: var(--cor-secundaria);
+    }
+}
+
+#aba__projetos{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 47px;
+    padding: 0.2em 0.5em;
+
+    &:hover{
+        transform: scale(1.2);
+        transition-duration: 300ms;
+        background-color: var(--cor-hover);
+        color: var(--cor-secundaria);
+    }
+    
+    &:focus{
+        transform: scale(1.2);
+        transition-duration: 300ms;
+        background-color: var(--cor-hover);
+        color: var(--cor-secundaria);
+    }
+}
+
+@media only screen and (max-width: 424px){
+    #aba__saiba-mais{
+        font-family: var(--fonte-secundaria);
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 11.5rem;
+        color: var(--cor-terciaria);
+        text-decoration: none;
+        background-color: transparent;
+        border: 2px solid var(--cor-secundaria);
+        border-radius: 47px;
+        padding: 0.2em 0.5em;
+    
+        &:hover{
+            transform: scale(1.2);
+            transition-duration: 300ms;
+            background-color: var(--cor-hover);
+            color: var(--cor-secundaria);
+        }
+    
+        &:focus{
+            transform: scale(1.1);
+            transition-duration: 300ms;
+            background-color: var(--cor-hover);
+            color: var(--cor-secundaria);
+        }
+    }
+    
+    #aba__projetos{
+        font-family: var(--fonte-secundaria);
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: var(--cor-terciaria);
+        text-decoration: none;
+        background-color: transparent;
+        border: 2px solid var(--cor-secundaria);
+        border-radius: 47px;
+        padding: 0.2em 0.5em;
+    
+        &:hover{
+            transform: scale(1.2);
+            transition-duration: 300ms;
+            background-color: var(--cor-hover);
+            color: var(--cor-secundaria);
+        }
+        
+        &:focus{
+            transform: scale(1.2);
+            transition-duration: 300ms;
+            background-color: var(--cor-hover);
+            color: var(--cor-secundaria);
+        }
+    }
+}

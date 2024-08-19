@@ -3,6 +3,12 @@
     width: 90%;
     align-items: center;
     height: 14rem;
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    margin: 2em 0;
+
     
     & .galeria{
         width: 800px;

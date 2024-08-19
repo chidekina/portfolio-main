@@ -1,0 +1,126 @@
+#cabecalho {
+    margin: 2% 5% 0% 5%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+    & .avatar {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+        & h4 {
+            font-family: var(--fonte-secundaria);
+            margin-top: 1rem;
+            font-size: 1.2rem;
+            color: var(--cor-hover);
+
+            & a {
+                text-decoration: none;
+                color: var(--cor-terciaria);
+
+                &:hover {
+                    text-decoration: underline;
+                    transition-duration: 400ms;
+                    color: var(--cor-hover);
+                }
+            }
+        }
+    }
+
+    & #cabecalho__informacoes__nome {
+        font-family: var(--fonte-primaria);
+        font-size: 2rem;
+        color: var(--cor-secundaria);
+    }
+
+    & #cabecalho__informacoes__funcao {
+
+        display: flex;
+        font-family: var(--fonte-primaria);
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: var(--cor-terciaria);
+        margin: 0.5% 0% 2% 0%;
+        justify-content: end;
+    }
+
+    & #cabecalho__informacoes__programas {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 1rem;
+
+        & .cabecalho__informacoes__programas__icone {
+            font-size: 3.5rem;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    
+    #cabecalho {
+        margin: 2% 5% 0% 5%;
+        display: flex;
+        flex-direction: column-reverse;
+    
+        & .avatar {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+    
+            & h4 {
+                font-family: var(--fonte-secundaria);
+                margin: 1.2rem 0;
+                font-size: 1.5rem;
+                color: var(--cor-hover);
+    
+                & a {
+                    text-decoration: none;
+                    color: var(--cor-terciaria);
+    
+                    &:hover {
+                        text-decoration: underline;
+                        transition-duration: 400ms;
+                        color: var(--cor-hover);
+                    }
+                }
+            }
+        }
+    
+        & #cabecalho__informacoes__nome {
+            display: flex;
+            font-family: var(--fonte-primaria);
+            font-size: 1.5rem;
+            color: var(--cor-secundaria);
+            justify-content: center;
+        }
+    
+        & #cabecalho__informacoes__funcao {
+    
+            display: flex;
+            font-family: var(--fonte-primaria);
+            font-size: 1.25rem;
+            font-weight: 400;
+            color: var(--cor-terciaria);
+            margin: 0.5rem 0;
+            justify-content: center;
+        }
+    
+        & #cabecalho__informacoes__programas {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            margin: 1rem 0 ;
+    
+            & .cabecalho__informacoes__programas__icone {
+                font-size: 3rem;
+                color: white;
+            }
+        }
+    }
+    
+
+}
