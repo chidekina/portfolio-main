@@ -118,32 +118,32 @@
         padding: 1rem;
     
         & h1{
-            color: var(--cor-secundaria);
+            -webkit-text-fill-color: var(--cor-secundaria);
             font-size: 2rem;
             font-family: var(--fonte-primaria);
             margin: 5rem 0 0 0;
         }
     
         & h2{
-            color: var(--cor-secundaria);
+            -webkit-text-fill-color: var(--cor-secundaria);
             font-size: 2rem;
             font-family: var(--fonte-secundaria);
             margin: 1.5rem 0;
     
             & strong{
-                color: var(--cor-terciaria);
+                -webkit-text-fill-color: var(--cor-terciaria);
                 font-weight: 700;
             }
         }
     
         & h3{
-            color: var(--cor-secundaria);
+            -webkit-text-fill-color: var(--cor-secundaria);
             font-size: 1.5em;
             font-family: var(--fonte-secundaria);
     
     
             & strong{
-                color: var(--cor-terciaria);
+                -webkit-text-fill-color: var(--cor-terciaria);
                 font-weight: 700;
             }
         }
@@ -152,16 +152,16 @@
             font-family: var(--fonte-secundaria);
             margin: 4rem 0;
             font-size: 2rem;
-            color: var(--cor-hover);
+            -webkit-text-fill-color: var(--cor-hover);
     
             & a{
                 text-decoration:none;
-                color: var(--cor-terciaria);
+                -webkit-text-fill-color: var(--cor-terciaria);
     
                 &:hover{
                     text-decoration: underline;
                     transition-duration: 400ms;
-                    color: var(--cor-hover);
+                    -webkit-text-fill-color: var(--cor-hover);
                 }
             }
         }
@@ -172,8 +172,8 @@
             font-family:var(--fonte-primaria);
             font-size: 1.5rem;
             text-decoration: none;
-            color: var(--cor-terciaria);
-            color: red;
+            -webkit-text-fill-color: var(--cor-terciaria);
+            -webkit-text-fill-color: red;
             margin-top: 6em;
             justify-content: center;
     
@@ -189,12 +189,13 @@
     
             & .saiba_mais__icones {
                 margin: 2rem 1rem;
-                width: 3.5rem;
-                filter: brightness(0) invert(1);
+                -webkit-column-width: 3.5rem;
+                width:  3.5rem;
+                -webkit-filter: brightness(0) invert(1);
             
                 &:checked{
                     transition: 500ms;
-                    filter: brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(3498%) hue-rotate(348deg) brightness(82%) contrast(101%);
+                    -webkit-filter: brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(3498%) hue-rotate(348deg) brightness(82%) contrast(101%);
                     transform: scale(1.2);
     
                 }
