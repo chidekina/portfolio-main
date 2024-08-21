@@ -30,7 +30,7 @@
     text-shadow: var(--cor-primaria) 2px 2px 2px;
 }
 
-@media only screen and (max-width: 426px){
+@media only screen and (max-width: 480px){
 
     .carrosel__foto-projeto {
         width: 60vw;
@@ -41,7 +41,7 @@
     }
 }
 
-@media only screen and (min-width: 427px) and (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
     .carrosel__foto-projeto {
         width: 40vw;
         height: 30vh;

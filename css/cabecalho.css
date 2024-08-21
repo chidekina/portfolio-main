@@ -59,7 +59,7 @@
     }
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 480px) {
     
     #cabecalho {
         margin: 2% 5% 0% 5%;
