@@ -179,18 +179,6 @@
                 </a>
             </div>
         </section>
-        <!-- 
-                 
-                </ul>
-            </div>
-            <section id="sobre">
-                <h1>Sobre</h1>
-                <p>Sou programador, aluno da Digital College e da Alura desde 2024.</p>
-                <p>Com o intuito de sempre agregar da melhora maneira através do trabalho em equipe aprendizado.</p>
-            </section>
-            <section id="linguagens">
-               
-            </section> -->
         <div class=foto>
             <img id="foto-perfil" src="./img/foto_perfil.jpeg" alt="foto de perfil">
         </div>
@@ -201,6 +189,20 @@
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $("#aba__saiba-mais").click(function(){
+        $("#apresentacao__conteudo__projetos").hide(0);
+        $("#apresentacao__conteudo__descricao").show();
+      });
+      $("#aba__projetos").click(function(){
+        $("#apresentacao__conteudo__descricao").hide(0);
+        $("#apresentacao__conteudo__projetos").show();
+
+      });
+    });
     </script>
 </body>
 

@@ -1,71 +1,88 @@
 :root {
-    --cor-primaria: #404040;
-    --cor-secundaria: #F6F6F6;
-    --cor-terciaria: #D41C1C;
-    --cor-hover: #910000;
+  --cor-primaria: #404040;
+  --cor-secundaria: #F6F6F6;
+  --cor-terciaria: #D41C1C;
+  --cor-hover: #910000;
 
-    --fonte-primaria: "Krona One", sans-serif;
-    --fonte-secundaria: "Montserrat", sans-serif;
+  --fonte-primaria: "Krona One", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
 }
 
-.container__digitando{
-    display: inline-block;
-    width: auto;
-    
-  
-   & h1{
+.container__digitando {
+  display: inline-block;
+  width: auto;
+
+
+  & h1 {
     overflow: hidden;
     border-right: .12em solid var(--cor-hover);
-    white-space: nowrap; 
+    white-space: nowrap;
     width: 0;
-    animation: 
+    animation:
       typing 2s steps(25, end) forwards, blink .75s infinite;
-   }
+  }
 
-   & h2{
+  & h2 {
     overflow: hidden;
     border-right: .15em solid var(--cor-hover);
-    white-space: nowrap; 
+    white-space: nowrap;
     width: 0;
-    animation: 
+    animation:
       typing 2s steps(25, end) forwards, blink .75s infinite;
     animation-delay: 1s;
-   }
-   & h3{
+  }
+
+  & h3 {
     overflow: hidden;
     border-right: .15em solid var(--cor-hover);
-    white-space: nowrap; 
+    white-space: nowrap;
     width: 0;
-    animation: 
+    animation:
       typing 2s steps(25, end) forwards, blink .75s infinite;
     animation-delay: 3s;
-   }
   }
+}
+
 @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+  from {
+    width: 0
   }
 
-  @keyframes blink{
-    from, to {border-color: transparent}
-    50% {border-color:var(--cor-hover)}
+  to {
+    width: 100%
+  }
+}
+
+@keyframes blink {
+
+  from,
+  to {
+    border-color: transparent
   }
 
-  .container__fade-in{
-
-        & #apresentacao__conteudo__descricao{
-            color: wheat;
-            animation: 1s ease-out 0s 1 fadeIn;
-        }
-
-
-
-    @keyframes fadeIn {
-        0% {
-            transform: translateX(-100%);
-          }
-          100% {
-            transform: translateX(0);
-          }
-    }
+  50% {
+    border-color: var(--cor-hover)
   }
+}
+
+
+#apresentacao__conteudo__descricao {
+  color: wheat;
+  animation: 1s ease-out 0s 1 fadeIn;
+}
+
+#apresentacao__conteudo__projetos {
+  color: wheat;
+  animation: 1s ease-out 0s 1 fadeIn;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}

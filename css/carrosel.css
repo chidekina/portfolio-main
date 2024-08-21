@@ -1,10 +1,13 @@
 #apresentacao__conteudo__projetos{
+    margin-top: 1rem;
     opacity: 0;
     height: 0;
+    transition: opacity 1s ease-out;
+    
 }
 
 .carrosel__foto-projeto {
-    width: 30vw;
+    width: 40vw;
     height: 40vh;
     filter: grayscale(100%) brightness(40%);
     transition: 400ms;
@@ -30,21 +33,35 @@
     text-shadow: var(--cor-primaria) 2px 2px 2px;
 }
 
-@media only screen and (max-width: 480px){
-
+/* Tablet na horizontal */
+@media screen and (max-width:1024px) {
     .carrosel__foto-projeto {
-        width: 60vw;
-        height: 30vh;
-        filter: none;
+        width: 50vw;
+        height: 40vh;
+        filter: grayscale(100%) brightness(40%);
         transition: 400ms;
         opacity: 0.8;
+    
+        &:hover {
+            filter: grayscale(0);
+            cursor: pointer;
+            transform: scale(1.1);
+            transition-duration: 500ms;
+            opacity: 1;
+    
+            ~.carousel-caption h5{
+                display: none;
+                transition-duration: 700ms;
+            }
+        }
     }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 768px) {
+/* Tablet na vertical */
+@media screen and (max-width:768px) {
     .carrosel__foto-projeto {
-        width: 40vw;
-        height: 30vh;
+        width: 50vw;
+        height: 35vh;
         filter: grayscale(100%) brightness(40%);
         transition: 400ms;
         opacity: 0.8;
@@ -61,5 +78,16 @@
                 transition-duration: 700ms;
             }
         }
+    } 
+}
+/* Smartphones */
+@media only screen and (max-width: 600px){
+
+    .carrosel__foto-projeto {
+        width: 70vw;
+        height: 30vh;
+        filter: none;
+        transition: 400ms;
+        opacity: 0.8;
     }
 }

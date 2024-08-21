@@ -13,7 +13,7 @@
             font-family: var(--fonte-secundaria);
             margin-top: 1rem;
             font-weight: 700;
-            font-size: 1.2rem;
+            font-size: 3rem;
             color: var(--cor-hover);
 
             & a {
@@ -59,7 +59,17 @@
     }
 }
 
-@media only screen and (max-width: 480px) {
+/* Tablet na horizontal */
+@media screen and (max-width:1024px) {
+  
+}
+
+/* Tablet na vertical */
+@media screen and (max-width:768px) {
+  
+}
+/* Smartphones */
+@media only screen and (max-width: 600px) {
     
     #cabecalho {
         margin: 2% 5% 0% 5%;
@@ -123,6 +133,4 @@
             }
         }
     }
-    
-
 }

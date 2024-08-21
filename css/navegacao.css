@@ -1,3 +1,7 @@
+.container__fade-in{
+    height: 450px;
+}
+
 #aba__saiba-mais{
     font-family: var(--fonte-secundaria);
     font-size: 1.5rem;
@@ -50,7 +54,24 @@
     }
 }
 
-@media only screen and (max-width: 480px){
+/* Tablet na horizontal */
+@media screen and (max-width:1024px) {
+    .container__fade-in{
+        height: 450px;
+    }
+}
+
+/* Tablet na vertical */
+@media screen and (max-width:768px) {
+    .container__fade-in{
+        height: 380px;
+    }
+}
+/* Smartphones */
+@media only screen and (max-width: 600px){
+    .container__fade-in{
+        height: 350px;
+    }
     #aba__saiba-mais{
         font-family: var(--fonte-secundaria);
         font-size: 1.5rem;
