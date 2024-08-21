@@ -50,12 +50,12 @@
     }
 }
 
-@media only screen and (max-width: 424px){
+@media only screen and (max-width: 426px){
     #aba__saiba-mais{
         font-family: var(--fonte-secundaria);
         font-size: 1.5rem;
         font-weight: 600;
-        width: 11.5rem;
+        width:50%;
         color: var(--cor-terciaria);
         text-decoration: none;
         background-color: transparent;
@@ -71,7 +71,7 @@
         }
     
         &:focus{
-            transform: scale(1.1);
+            transform: scale(1);
             transition-duration: 300ms;
             background-color: var(--cor-hover);
             color: var(--cor-secundaria);
@@ -87,17 +87,18 @@
         background-color: transparent;
         border: 2px solid var(--cor-secundaria);
         border-radius: 47px;
+        width: 50%;
         padding: 0.2em 0.5em;
     
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1.05);
             transition-duration: 300ms;
             background-color: var(--cor-hover);
             color: var(--cor-secundaria);
         }
         
         &:focus{
-            transform: scale(1.2);
+            transform: scale(1);
             transition-duration: 300ms;
             background-color: var(--cor-hover);
             color: var(--cor-secundaria);

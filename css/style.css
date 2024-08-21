@@ -5,7 +5,7 @@
 @import url(/css/formacoes.css);
 @import url(/css/index.css);
 @import url(/css//navegacao.css);
-@import url(/css/projetos.css);
+@import url(carrosel.css);
 
 :root {
     --cor-primaria: #404040;
@@ -23,12 +23,13 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
+    font-family: var(--fonte-secundaria);
 }
 
 body {
 
     background: rgb(2, 0, 36);
-    background-size: contain;
+    background-size: auto;
     background-repeat: no-repeat;
     background: linear-gradient(133deg, rgba(2, 0, 36, 1) 0%, rgba(115, 0, 0, 1) 52%, rgba(2, 0, 36, 1) 100%);
     background-position: center;
