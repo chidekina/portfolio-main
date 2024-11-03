@@ -106,7 +106,7 @@
 }
 
 /* Tablet horizontal */
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
     .boas_vindas {
         margin-top: 0;
@@ -208,7 +208,7 @@
     
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .boas_vindas {
         margin-top: 0.5rem;
         display: flex;
@@ -330,7 +330,7 @@
         }
     }
 }
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .boas_vindas {
         margin-top: 0.5rem;
         display: flex;
